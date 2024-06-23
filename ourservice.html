@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our-Service</title>
+</head>
+<style>
+    .header{
+            border: 1px solid black;
+            display: flex; 
+            align-content: space-between;
+            gap: 100px;
+            background-color: lightpink;
+        }
+        .leftsec{
+            border: 1px solid black;
+            width: 500px;  
+            cursor: pointer; 
+
+        }
+         .midsec{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            border: 1px solid black;
+            width:800px;
+            
+        }
+        .hm{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 550;
+            color: white;
+            align-content: center;
+            text-align: center;
+             border: 1px solid black;
+             border-radius: 7px; 
+            width: 200px;
+            height: 30px;
+            cursor: pointer;
+             transition: 0.2s;    
+        } 
+        .hm:hover{
+            color: black;
+           background-color: palevioletred;
+        }
+        .hm:active{
+            opacity: 0.3;
+        }
+
+        .lastsec{
+            border: 1px solid black;
+            width: 500px; 
+            align-content: center; 
+        } 
+        .lasecbutt{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            background-color:rgb(253, 216, 253) ;
+            border: 1px solid rgb(253, 216, 253);
+            border-radius: 15px;
+            width: 120px;
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .lasecbutt:hover{
+            color: white;
+            background-color:rgb(253, 162, 253);
+        }
+        .lasecbutt:active{
+            opacity: 0.7; 
+        }
+
+        .flawarea{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 50px;
+            font-weight: 600;
+            padding: 150px;
+            background-color: pink;
+            background-image: url(loudpics/brows.jpeg);
+            color:white; 
+            text-align: center;
+            border: 1px solid black;
+            
+        }
+        .lasttext{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 60px;
+             margin: 50px; 
+        }
+        .pricingsec{
+            border: 1px solid black;
+            display: flex;
+            gap: 180px;
+            padding: 30px;
+
+        }
+        .lashprice, .sw, .sw1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 23px;
+            /* border: 1px solid black; */
+             padding: 20px; 
+            width:500px;
+            box-shadow: 2px 2px 10px ;
+        }
+        .gas{
+            font-size: 17px; 
+            color: rgb(131, 131, 131); ;
+        }
+        .swb, .swbb{
+            border: 1px solid black;
+            display: flex;
+            gap: 180px;
+             padding: 30px;
+        }
+        .sw {
+            border: 1px solid black;
+            padding: 20px;
+            width: 500px;
+        }
+        .cancellationsec{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+             padding: 50px; 
+        }
+        .whatif{
+            display: flex;
+            gap: 600px;
+            border: 1px solid black;
+
+        }
+        .wpbk{
+            margin: 20px;
+        }
+        .wpp{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px; 
+            font-weight: 550; 
+            color: palevioletred; 
+        }
+        .wp{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px; 
+            font-weight: 550; 
+        }
+        .bk{
+            align-content: center;
+            
+        }
+        .bookrea{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            border-radius: 5px;
+            border:1px solid palevioletred;
+            background-color: palevioletred;
+            color: white;
+            width:200px;
+             padding: 10px; 
+            cursor: pointer;
+        }
+        .bookrea:hover{
+           background-color:  white;
+           color: palevioletred;
+        }
+        .bookrea:active{
+            background-color: palevioletred;
+            color: white;
+        }
+        .btx{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px; 
+            text-align: center;
+        }
+         .butt {
+           margin-left: 550px;
+           padding: 20px;
+         }  
+        .book{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            border-radius: 5px;
+            border:1px solid palevioletred;
+            background-color: palevioletred;
+            color: white;
+            width:200px;
+            padding: 10px;
+            cursor: pointer;
+
+        }
+        .book:hover{
+           background-color:  white;
+           color: palevioletred;
+        }
+        .book:active{
+            background-color: palevioletred;
+            color: white;
+        }
+        .loveon{
+            display: flex;
+            border: 1px solid black;
+            background-color: rgb(235, 213, 216);
+            gap: 200px;
+            /* padding: 100px;  */
+        }
+        .lv{
+            border: 1px solid black;
+             width: 600px; 
+             padding: 100px; 
+        }
+        .loy{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: rgb(131, 131, 131);   
+        }
+        .ty{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 70px;  
+        }
+        /* .bapt{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: rgb(131, 131, 131);
+            width: 300px;
+            padding: 20px;
+            background-color: blueviolet; 
+            cursor: pointer;
+        } */
+        .lvpic{
+            border: 1px solid black;
+            /* width: 300px; */
+            /* padding: 50px; */
+        }
+        .lvpik{
+            border-radius: 5px;
+            width: 500px;
+
+            /* height:550px  */
+        }
+        .ovqn{
+            display: flex;
+            border: 1px solid black; 
+            /* padding: 10px; */
+        }
+        .uiue{
+            display: flex;
+            gap:10px ;
+           flex-direction: column;
+            border: 1px solid black;
+            /* width: 500px; */
+             padding: 40px; 
+        
+        }
+        .our{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            font-weight: 550;
+            text-align: center;
+            color: palevioletred; 
+
+        }
+        .number{
+            border: 1px solid black;
+            width: 150px;
+            
+            /* padding: 50px; */
+        }
+        .phone{
+           
+            width: 30px;
+            
+        }
+        .numerals{
+            display: inline-block; 
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            color: rgb(131, 131, 131);
+
+        }
+        .fol{
+            border: 1px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            font-weight: 550;
+            text-align: center;
+            color: palevioletred;
+            
+        } 
+
+        .foll{
+             display: flex;
+            gap: 20px;
+            border: 1px solid black; 
+           
+        }
+        .folll{
+            align-content: center;
+            border: 1px solid black;
+            width: 45px;
+            
+        }
+        .folls {
+            width: 40px;
+        } 
+        .loca{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: rgb(131, 131, 131);
+            border: 1px solid black;
+            width: 220px;
+        }
+        .time{
+            border: 1px solid black; 
+            text-align: center;
+        }
+        .tt{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: rgb(49, 49, 49);
+        }
+        .ttt{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: rgb(131, 131, 131); 
+        }
+        .mcmc{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: rgb(131, 131, 131); 
+            text-align: center;
+            border: 1px solid black;
+            width: 200px;
+            cursor: pointer;
+        }
+        .nl{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: rgb(131, 131, 131);
+        }
+        .mail{
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .subs{
+             border: none;
+            border-radius: 5px;
+            padding: 5px;
+            width: 100px;
+            background-color:palevioletred ;
+            color: white;
+            cursor: pointer;
+        }
+        .subs:active{
+            opacity: 0.6;
+        }
+       .pay{
+        border: 1px solid black;
+        width: 350px;
+    }
+    .lastsecc{
+        display: flex;
+        gap: 200px;
+        border: 1px solid black;
+        background-color: pink;
+        padding: 10px;
+       }
+       .cr{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 550;
+        color: rgb(131, 131, 131);
+        border: 1px solid black;
+        padding: 20px;
+        width: 500px;
+       }
+
+</style>
+<body>
+    <section class="header">
+    <div class="leftsec">
+        <img src="loudpics/lashitloud_logo.svg">
+    </div>
+    <div class="midsec">
+        <p class="hm">
+           HOME
+        </p>
+        <p class="hm">
+            OUR SERVICES
+        </p>
+        <p class="hm">
+            OUR STORY
+        </p>
+        <p class="hm">
+            TRAINING
+        </p>
+        <p class="hm">
+            LOUD SHOP
+        </p>
+        <p class="hm">
+           VISIT US
+        </p>
+    </div>
+    <div class="lastsec">
+       <button class="lasecbutt">BOOK NOW</button>
+    </div>
+   </section> 
+
+
+   <section class="firstsec">
+    <div class="flawarea">
+        <p>Our Services</p>  
+    </div>
+   </section>
+
+   <p class="lasttext">
+    Lashes
+   </p>
+
+    <section class="pricingsec">
+        
+        <div class="lashprice"> 
+            <p>Classic Lash Extension.....................................GHC 350<br>
+                <span class="gas">Infill  ....GHC 200</span>
+            </p>
+                
+            <p> Hybrid Lash Extension....................................GHC 450<br>
+                <span class="gas">Infill  ....GHC 300</span>
+            </p>
+                
+            <p>  Russian Volume Lash Extension..................GHC 550<br>
+                <span class="gas">Infill  ....GHC 400</span>
+            </p>  
+                
+            <p> Mega Volume Lash Extension.......................GHC 650<br>
+                <span class="gas">Infill  ....GHC 450</span>
+            </p>
+            <p>
+                Strip Lash Effect Volume Extensions.........GHC 700<br>
+                <span class="gas">Infill  ....GHC 500</span>
+            </p>
+        </div>
+        <div class="lashprice">
+           <p> Lash Done Externally..............................GHC 50 extra</p>
+            <p>Bottom Lashes....................................................GHC 100</p>
+           <p> Mink Lash Removal............................................ GHC 80 </p>
+        </div>
+    </section>
+
+    <p class="lasttext"> Brows</p>
+
+    <section class="swb">
+        <div class="sw">
+           <p>Shape with Blade............................................ GHC 30</p> 
+           <p> Shape with Wax............................................... GHC 50</p>
+        </div>
+        <div class="sw">
+            <p>Henna Brows................................................... GHC 150</p>
+            <p>Henna Brows................................................... GHC 150</p>
+        </div>
+    </section>
+
+    <p class="lasttext"> Waxing</p>
+
+    <section class="swb">
+        <div class="sw">
+        <p>Full Arms................................................................. GHC120<br>
+            <span class="gas"> Half Arms....GHC 70</span>
+        </p>
+        <p>Full legs.................................................................... GHC 150<br>
+           <span class="gas"> Half Legs....GHC 120</span>
+        </p>
+        <p>Brazilian wax......................................................... GHC 120
+
+        </p>
+        <p>Hollywood............................................................... GHC 200
+
+        </p>
+        <p>Tweezing.................................................................... GHC 50
+        </p>
+        </div>
+        <div class="sw">
+            <p>Full Face................................................................. GHC120
+                
+            </p>
+            <p>Chin.................................................................... GHC 30
+             
+            </p>
+            <p>Upper Lip......................................................... GHC 30
+    
+            </p>
+            <p>Brow................................................................... GHC 40
+    
+            </p>
+            <p>Whole Face......................................................... GHC 80
+            </p>  
+        </div>
+    </section>
+
+
+    <p class="lasttext"> Semi-Permanent MakeUp, MakeUp & Piercing</p>
+
+    <section class="swbb">
+        <div class="sw1">
+        <p class="btx">Semi-Permanent MakeUp
+        </p>
+       
+        <p>Microshading/PMU Ombre Powder Brows<br>
+            .......................................................................GHC 1500
+        </p>
+        <p>Lip Blush....................................................GHC 2000
+        </p>
+        </div>
+
+
+        <div class="sw1">
+            <p class="btx"> MakeUp
+                
+            </p>
+            <p>Make up ............................................................GHC 200
+             
+            </p>
+            <p class="btx"> Piercing
+    
+            </p>
+            <p>Nose...............................................................GHC 200
+    
+            </p>
+            <p>Ear...................................................................GHC 150
+            </p>  
+        </div>
+    </section>
+    <section class="cancellationsec">
+        <div class="butt">
+            <button class="book">
+                Book an Appointment
+            </button>
+        </div>
+
+        <div class="whatif">
+            <div class="wpbk">
+            <p  class="wpp">
+                What if I miss my appointment?
+            </p>
+            <p class="wp">
+                 Please read our Cancellation Policy...
+            </p></div>
+
+            <div class="bk">
+            <button class="bookrea">
+                Click here to read >>
+            </button></div>
+
+        </div>
+    </section>
+
+<section class="loveon">
+    <div class="lv">
+        <p class="loy">
+            LOVE ON YOURSELF
+        </p>
+
+        <p class="ty">
+            TREAT YOURSELF
+        </p>
+
+        <!-- <p class="bapt">
+            BOOK AN APPOINTMENT TODAY ⟶
+        </p> -->
+    </div>
+    <div class="lvpic">
+        <img class="lvpik" src="loudpics/love.jpg">
+    </div>
+</section>
+
+
+<section class="ovqn">
+    <div class="uiue">
+        <p class="our">OUR HOTLINES</p>
+        <div class="number">
+           <img class="phone" src="loudpics/phone-removebg-preview.png">
+           <p class="numerals">054 823 2270</p>
+        </div>
+        <div class="number">
+            <img class="phone" src="loudpics/whatsapp-removebg-preview.png">
+            <p class="numerals">027 938 1218</p>
+         </div>
+       
+        <div class="fol">FOLLOW US
+            <div class="foll" >
+                <div class="folll">
+                    <img class="folls" src="loudpics/instagram-removebg-preview.png">
+                </div>
+                <div class="folll">
+                    <img class="folls" src="loudpics/tik-removebg-preview.png">
+                </div>
+                <div class="folll">
+                    <img class="folls" src="loudpics/snapchat-social-media-icon-removebg-preview.png">
+                </div>
+               
+            </div>
+        </div>
+        
+    </div>
+    <div class="uiue"> 
+        <p class="our">VISIT US</p>
+        <div class="loca">Agbogba-Ashoman Road,<br>
+            North Legon, Accra-Ghana.
+        </div>
+        
+        <div class="time">
+            <p class="our">WORKING HOURS</p>
+            <p class="tt">Monday – Saturday</p>
+            <span class="ttt">09:00am – 07:00 pm</span> 
+            <p class="tt">Sunday</p> 
+            <span class="ttt">02:00 pm – 07:00 pm</span>
+        </div>
+
+    </div>
+
+
+    <div class="uiue">
+        <p class="our">QUICK LINKS</p>
+        <div class="mcmc">
+            <p> My Cart</p>
+            <p> Checkout</p>
+            <p> My Account</p>
+            <p>  Contact Us</p>
+            <p> Our Services</p>
+            <p> Our Products</p>
+            <p> Book Appointment</p>   
+        </div>
+    </div>
+    <div class="uiue">
+        <p class="our">NEWS LETTER</p>
+        <div class="nl">
+            Stay up to date with our latest news, receive exclusive deals, and more.
+        </div>
+        <input class="mail" type="text" placeholder="Enter Your Email Address">
+        <input class="subs" type="submit" value="Subscribe">
+        <div>
+         <img class="pay" src="loudpics/paystack-gh.webp">
+        </div>
+    </div>
+
+</section>
+
+
+<section class="lastsecc">
+    <div class="cr">
+         © Lashitloud Beauty Studio - North Legon 2024
+    </div>
+    <div class="cr">
+        Powered by McGENIUS GLOBAL LLC
+    </div>
+</section>
+
+
+
+    
+
+</body>
+</html>
